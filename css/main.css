@@ -96,11 +96,11 @@ header.hero-img .fa-chevron-down {
   font-style: 30px;
 }
 .aboutme .aboutme-card-title {
-  font-style: 10px;
+  font-style: 18px;
   text-transform: uppercase;
 }
-.aboutme .aboutme-card-ext {
-  font-style: 16px;
+.aboutme .aboutme-card-text {
+  font-style: 14px;
 }
 
 @media (min-width: 768px) {
