@@ -130,6 +130,15 @@ header.hero-img .fa-chevron-down {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -5;
 }
+.aboutus-hero .aboutme-hero-item {
+  margin: 20px 0;
+}
+.aboutus-hero .aboutme-hero-item i {
+  font-size: 25px;
+}
+.aboutus-hero .aboutme-hero-item .aboutme-hero-title {
+  font-size: 24px;
+}
 
 @media (min-width: 768px) {
   .hero-text h1 {
@@ -142,6 +151,14 @@ header.hero-img .fa-chevron-down {
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 88px;
+  }
+  .aboutus-hero {
+    position: relative;
+    background-image: url(/img/matrix-3408060_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ddd;
+    z-index: 0;
   }
 }
 @media (min-width: 1200px) {
