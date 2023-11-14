@@ -12,7 +12,7 @@ html {
 
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: #333;
+	background-color: $bg-color;
 }
 
 .blue-text {
@@ -117,12 +117,11 @@ header.hero-img {
 		font-style: 14px;
 	}
 	.aboutme-hover {
-		transition: color .3s;
+		transition: color 0.3s;
 	}
 	.aboutme-hover:hover {
 		color: $master-color;
 	}
-
 }
 
 .aboutus-hero {
@@ -142,8 +141,8 @@ header.hero-img {
 		background-color: rgba(0, 0, 0, 0.6);
 		z-index: -5;
 	}
-	
-	.aboutme-hero-item{
+
+	.aboutme-hero-item {
 		margin: 20px 0;
 
 		i {
@@ -155,8 +154,27 @@ header.hero-img {
 		}
 	}
 }
+.prices {
+	.price-box {
+		margin: 20px;
+	}
+}
 
-@media(min-width: 768px ) {
+@media (max-width: 575.98px) {
+	p {
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 576px) {
+	.carousel-inner {
+		p {
+			font-size: 22px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
 	.hero-text {
 		h1 {
 			font-size: 42px;
@@ -182,7 +200,6 @@ header.hero-img {
 		z-index: 0;
 	}
 }
-
 
 @media (min-width: 1200px) {
 	header.hero-img {
