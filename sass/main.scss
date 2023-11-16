@@ -1,4 +1,5 @@
 @use "./colors" as *;
+@use "./animation" as *;
 
 * {
 	box-sizing: border-box;
@@ -20,7 +21,7 @@ body {
 }
 
 .shadow-bg {
-	color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .section-title {
@@ -32,13 +33,14 @@ body {
 	margin: 0 auto 40px;
 	width: 60px;
 	height: 5px;
-	background-color: $master-color;
+	background-color: $bg-color;
 }
 
 nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
-	z-index: 1;
+	z-index: 5;
+
 	.navbar-toggler {
 		padding: 10px 15px;
 	}
@@ -64,7 +66,7 @@ nav {
 header.hero-img {
 	position: relative;
 	height: 100vh;
-	background-image: url(../img/computer-1231889_640.jpg);
+	background-image: url('../img/computer-1231889_640.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -81,7 +83,7 @@ header.hero-img {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.8);
 		z-index: -5;
 	}
 
@@ -126,7 +128,7 @@ header.hero-img {
 
 .aboutus-hero {
 	position: relative;
-	background-image: url(/img/matrix-3408060_640.jpg);
+	background-image: url('/img/matrix-3408060_640.jpg');
 	background-size: cover;
 	background-position: center;
 	color: $light-grey;
@@ -156,7 +158,110 @@ header.hero-img {
 }
 .prices {
 	.price-box {
-		margin: 20px;
+		margin: 15px;
+		padding: 15px;
+		background-color: $white-color;
+		box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4);
+		transition: scale 0.3s;
+
+		span {
+			font-weight: bold;
+		}
+
+		i {
+			padding: 0 5px;
+			font-size: 24px;
+		}
+
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+	}
+
+	.price-box:hover {
+		scale: 1.05;
+	}
+
+	.price-title {
+		color: $master-color;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.price-tag {
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+	.price-info {
+		margin-top: 30px;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.contact {
+	position: relative;
+	background-image: url('../img/wallpaperflare.com_wallpaper.jpg');
+	background-position: bottom;
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: 0;
+
+	.section-title {
+		color: $light-grey;
+	}
+
+	.underline {
+		background-color: $light-grey;
+	}
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(22, 25, 72, 0.5);
+		z-index: -5;
+	}
+
+	.contact-me {
+		display: flex;
+		align-items: center;
+		color: $white-color;
+
+		.contact-item {
+			margin: 30px 0;
+		}
+
+		h3 {
+			margin-bottom: 15px;
+			letter-spacing: 2px;
+		}
+
+		.fa-solid {
+			font-size: 25px;
+		}
+
+		.social-media {
+			font-size: 25px;
+
+			a {
+				padding: 15px;
+				color: $white-color;
+				transition:  color .3s;
+			}
+
+			a:hover {
+				color: $master-color
+			}
+		}
+
 	}
 }
 
@@ -193,7 +298,7 @@ header.hero-img {
 
 	.aboutus-hero {
 		position: relative;
-		background-image: url(/img/matrix-3408060_1920.jpg);
+		background-image: url('/img/matrix-3408060_1920.jpg');
 		background-size: cover;
 		background-position: center;
 		color: $light-grey;
@@ -203,6 +308,6 @@ header.hero-img {
 
 @media (min-width: 1200px) {
 	header.hero-img {
-		background-image: url(../img/computer-1231889_1920.jpg);
+		background-image: url('../img/computer-1231889_1920.jpg');
 	}
 }

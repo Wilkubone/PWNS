@@ -13,13 +13,14 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/ea29700610.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navId">
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg 
-    position-fixed top-0 w-100 py-4">
+    position-fixed top-0 w-100 py-4" id="navId">
         <div class="container">
             <a class="navbar-brand" href="#"><span class="blue-text">pwns</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -32,7 +33,7 @@
                     <a class="nav-link" href="#aboutme">About me</a>
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                     <a class="nav-link" href="#prices">Ceny</a>
-                    <a class="nav-link" href="#achievements">Osiągnięcia</a>
+                    <a class="nav-link" href="#achievements">blog</a>
                     <a class="nav-link" href="#contact">Kontakt</a>
                 </div>
             </div>
@@ -43,11 +44,12 @@
         <div class="hero-text text-center p-4">
             <h1>Witam na mojej <span class="blue-text">stronie</span></h1>
             <p>Tworzę oprogramowanie z pasją💾</p>
-            <a href="#aboutme" class="btn btn-outline-light mt-2 text-uppercase">Wejdź ! zobacz</a>
+            <a href="#aboutme"
+                class="btn btn-outline-light mt-2 text-uppercase">Wejdź ! zobacz</a>
 
         </div>
         <div class="hero-shadow"></div>
-        <a href="#aboutme"><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#aboutme"><i class="fa-solid fa-chevron-down bounce-top"></i></a>
     </header>
 
     <!-- ABOUT -->
@@ -172,9 +174,9 @@
                         <div class="price-box">
                             <p class="price-title">Aplikacje web-owe <i class="fa-solid fa-laptop-code"></i></p>
 
-                            <p><span>Strona internetowa: 150/~~</span></p>
-                            <p><span></span>Aplikacja mobilna: 200/~~</p>
-                            <p><span>Sklep internetowy: 300/~~</span></p>
+                            <p><span>Strona internetowa: </span>150/~~</p>
+                            <p><span>Aplikacja mobilna: </span> 200/~~</p>
+                            <p><span>Sklep internetowy: </span>300/~~</p>
                             <a class="btn btn-primary" href="#" role="button">Zamawiam</a>
                         </div>
                     </div>
@@ -182,9 +184,9 @@
                         <div class="price-box">
                             <p class="price-title">Aplikacje web-owe <i class="fa-solid fa-laptop-code"></i></p>
 
-                            <p><span>Strona internetowa: ~~150</span></p>
-                            <p><span></span>Aplikacja mobilna: ~~200</p>
-                            <p><span>Sklep internetowy: ~~ 300</span></p>
+                            <p><span>Strona internetowa: </span>~~150</p>
+                            <p><span>Aplikacja mobilna: </span>~~200</p>
+                            <p><span>Sklep internetowy: </span>~~ 300</p>
                             <a class="btn btn-primary" href="#" role="button">Zamawiam</a>
 
                         </div>
@@ -193,22 +195,54 @@
                         <div class="price-box">
                             <p class="price-title">Inne usługi <i class="fa-solid fa-house-laptop"></i></p>
 
-                            <p><span>Instalacja systemu: 50/~~</span></p>
-                            <p><span></span>Wgranie oprogramowania: 50/~~</p>
-                            <p><span>Pokrewne związane z serwisem: 20/~~</span></p>
+                            <p><span>Instalacja systemu: </span>50/~~</p>
+                            <p><span>Wgranie oprogramowania: </span>50/~~</p>
+                            <p><span>Pokrewne związane z serwisem: </span>20/~~</p>
                             <a class="btn btn-primary" href="#" role="button">Zamawiam</a>
 
                         </div>
                     </div>
                 </div>
+                <p class="price-info text-center">Po wiecej informacji <a href="#contact">skontaktuj
+                        się</a> ze mną i ustal warunki indywidualne!</p>
+
             </div>
         </section>
+        <section id="contact" class="contact py-5">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="underline"></div>
+            <div class="container">
+                <div class="row text-center contact-me">
+                    <div class="col-sm-6 col-lg-4 contact-item order-1">
+                        <h3>Tomasz Wilczyński</h3>
+                        <p><i class="fa-solid fa-location-dot"></i></p>
+                        <p>ul.Grabowskiego 1</p>
+                        <p>Gdynia Chwarzno</p>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 contact-item order-1">
+                        <h3>Telefon</h3>
+                        <p><i class="fa-solid fa-square-phone"></i></p>
+                        <p>+48 792-819-388</p>
+                    </div>
+                    <div class="col-lg-4 contact-item order-0 order-lg-1">
+                        <h3>Media społecznościowe</h3>
+                        <div class="social-media">
+                            <a href="" class=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class=""><i class="fa-brands fa-github"></i></a>
+                            <a href="" class=""><i class="fa-brands fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-shadow"></div>
+        </section>
     </main>
-
-
-
-
-
+    <!--Footer-->
+    <footer class="bg-dark text-light py-4 text-center">
+        <p class="mb-0"> &copy; 2023 | PWNS</p>
+        <p>projektywwwnastart.pl</p>
+    </footer>
 
 
 
@@ -216,6 +250,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
