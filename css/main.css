@@ -53,11 +53,11 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #858995;
+  background-color: #abacb6;
 }
 
 .blue-text {
-  color: rgba(42, 209, 209, 0.888);
+  color: rgba(43, 196, 196, 0.888);
 }
 
 .shadow-bg {
@@ -73,7 +73,7 @@ body {
   margin: 0 auto 40px;
   width: 60px;
   height: 5px;
-  background-color: #858995;
+  background-color: rgba(43, 196, 196, 0.888);
 }
 
 nav {
@@ -91,13 +91,13 @@ nav .nav-link,
 nav .navbar-nav .show > .nav-link,
 nav .navbar-brand,
 nav .fa-bars {
-  color: white;
+  color: #fff;
 }
 nav .nav-link:focus,
 nav .nav-link:hover,
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .show > .nav-link {
-  color: rgba(42, 209, 209, 0.888);
+  color: rgba(43, 196, 196, 0.888);
 }
 
 header.hero-img {
@@ -107,7 +107,7 @@ header.hero-img {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: white;
+  color: #fff;
   z-index: 0;
 }
 header.hero-img h1 {
@@ -135,7 +135,7 @@ header.hero-img .fa-chevron-down {
   transform: translate(-50%);
   bottom: 20px;
   font-size: 30px;
-  color: white;
+  color: #fff;
 }
 
 .aboutme i {
@@ -153,7 +153,7 @@ header.hero-img .fa-chevron-down {
   transition: color 0.3s;
 }
 .aboutme .aboutme-hover:hover {
-  color: rgba(42, 209, 209, 0.888);
+  color: rgba(43, 196, 196, 0.888);
 }
 
 .aboutus-hero {
@@ -186,9 +186,10 @@ header.hero-img .fa-chevron-down {
 .prices .price-box {
   margin: 15px;
   padding: 15px;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   transition: scale 0.3s;
+  border-radius: 20px;
 }
 .prices .price-box span {
   font-weight: bold;
@@ -205,7 +206,7 @@ header.hero-img .fa-chevron-down {
   scale: 1.05;
 }
 .prices .price-title {
-  color: rgba(42, 209, 209, 0.888);
+  color: rgba(43, 196, 196, 0.888);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
@@ -232,22 +233,19 @@ header.hero-img .fa-chevron-down {
 .contact .section-title {
   color: #ddd;
 }
-.contact .underline {
-  background-color: #ddd;
-}
 .contact .contact-shadow {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(22, 25, 72, 0.5);
+  background-color: rgba(0, 9, 27, 0.85);
   z-index: -5;
 }
 .contact .contact-me {
   display: flex;
   align-items: center;
-  color: white;
+  color: #fff;
 }
 .contact .contact-me .contact-item {
   margin: 30px 0;
@@ -264,11 +262,11 @@ header.hero-img .fa-chevron-down {
 }
 .contact .contact-me .social-media a {
   padding: 15px;
-  color: white;
+  color: #fff;
   transition: color 0.3s;
 }
 .contact .contact-me .social-media a:hover {
-  color: rgba(42, 209, 209, 0.888);
+  color: rgba(43, 196, 196, 0.888);
 }
 
 @media (max-width: 575.98px) {
